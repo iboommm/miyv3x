@@ -16,14 +16,14 @@ class App extends Component {
   }
 
   goTwitter(e) {
-    window.location = 'https://www.facebook.com/iboommm';
+    window.location = 'https://twitter.com/iboommm_';
   }
 
 
   render() {
     return (
       <div className="App container-fluid">
-      <Jumbotron>
+      <Jumbotron style={{ textAlign:'center'}}>
         <h1>Emergency Maintenance</h1>
         <p>I'm ready for React! <br />Coming Soon.</p>
         <p>
