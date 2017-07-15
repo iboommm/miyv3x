@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-import { Router, Route, Switch } from 'react-router'
-import logo from './img/logo.png';
 import './App.css';
-import { Button,Jumbotron } from 'react-bootstrap';
+import { Image,Button,Jumbotron } from 'react-bootstrap';
 import * as Icons from 'react-icons/lib/fa'
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-  }
 
 
   goFacebook(e) {
@@ -19,11 +14,12 @@ class App extends Component {
     window.location = 'https://twitter.com/iboommm_';
   }
 
-
+ 
   render() {
     return (
       <div className="App container-fluid">
       <Jumbotron style={{ textAlign:'center'}}>
+      <Image src={require ("./img/logo.png")} thumbnail />
         <h1>Emergency Maintenance</h1>
         <p>I'm ready for React! <br />Coming Soon.</p>
         <p>
